@@ -30,13 +30,25 @@
           </select>
         </li>
 
-        <li><a href="{{ url_for('manual_ssid_entry') }}" class="manualSSIDEntry">manual SSID entry -></a></li>
+        <li><a href="{{ url_for('manual_ssid_entry') }}" class="manualSSIDEntry">(Or type manual SSID)</a></li>
 
-        <li><label for="wifi_key">Your Wifi password</label></li>
-        <li><input type="password" name="wifi_key", class="wifiNetworkInputs"></li>
-
+        <li><label for="wifi_key">Enter password</label></li>
+        <li><input type="password" id="myInput" name="wifi_key" placeholder="Password123", class="wifiNetworkInputs"></li>
+        <li></li><input type="checkbox" onclick="showpass()"><label for="show">Show password</label></li>
+        <script>
+          function showpass() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
+          </script>
         <input type="submit", class="wifiConnectButton">
       </ul>
     </form>
+    
+
   </div>
 {% endblock %}
