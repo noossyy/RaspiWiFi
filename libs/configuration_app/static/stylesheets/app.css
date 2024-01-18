@@ -27,7 +27,7 @@ div#mainContent{
 
 div#mainContent h1 {
     margin:0 0 .5em 0;
-    font-size:3rem;
+    font-size:2rem;
 }
 
 div#mainContent ul{
@@ -56,6 +56,11 @@ div#wpaStatus a{
 label[for=ssid],
 label[for=wifi_key]{
     font-size:1.9rem;
+
+}
+label[for=show]{
+    font-size:1.2rem;
+
 }
 
 /* Select
@@ -123,7 +128,7 @@ select.wifiNetworkInputs {
 }
 
 .manualSSIDEntry{
-	font-size: 1rem;
+	font-size: 1.5rem;
 	color: #fff;
 }
 
@@ -153,6 +158,7 @@ div#saveCredentialsOutput{
 
 .wifiIcon {
     padding: 10px;
+    
 }
 .wifiIcon, .wifiIcon:before {
     display: inline-block;
